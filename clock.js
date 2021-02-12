@@ -69,7 +69,7 @@ class AnalogClock {
 		
 		this.context.lineWidth = 20;
 		this.context.strokeStyle = "rgb(0,0,0)";
-		var theta = this.timetotheta(this.hour, 24);
+		var theta = this.timetotheta(this.hour, 12);
 		var x = 200*Math.cos(theta);
 		var y = 200*Math.sin(theta);
 		this.context.beginPath();
