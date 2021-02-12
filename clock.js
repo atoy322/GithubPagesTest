@@ -1,8 +1,8 @@
 
 
 class AnalogClock {
-	constructor(){
-		this.canvas = document.getElementById("analogClock");
+	constructor(cid){
+		this.canvas = document.getElementById(cid);
 		this.context = this.canvas.getContext("2d");
 		this.w = this.canvas.width;
 		this.h = this.canvas.height;
@@ -88,10 +88,10 @@ class AnalogClock {
 }
 
 function onstart(){
-	var clock = new AnalogClock();
+	var clock = new AnalogClock("analogClock");  // id of canvas element.
 	var date = new Date();
 	clock.settime(date.getHours(), date.getMinutes(), date.getSeconds());
-	setInterval(function(){
+	setInterval(() => {
 		var date = new Date();
 		clock.hour = date.getHours();
 		clock.minute = date.getMinutes();
