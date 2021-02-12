@@ -15,4 +15,4 @@ Simple Analog Clock page -> [URL](https://atoy322.github.io/GithubPagesTest/cloc
 
 
 ##### Analog Clock image
-<img src="https://atoy322.github.io/GithubPagesTest/resources/clock.png"></img>
+<img src="resources/clock.png">
