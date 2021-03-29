@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>HelloWorld</title>
-        <script src="./scripts/script.js"></script>
-        <link rel="stylesheet" href="./stylesheets/style.css">
-    </head>
-    <body>
-        <h1>Hello</h1>
-        <h2>World</h2>
-        <button id="buttontext" onclick="increment();">count = 0</button>
-    </body>
+	<head>
+		<title>HTML5 Clock</title>
+		<script src="./scripts/clock.js"></script>
+		<link rel="stylesheet" href="./stylesheets/clock.css">
+                <link rel="shortcut icon" href="./resources/favicon.ico">
+	</head>
+	<body onload="onstart();">
+		<h1 id="desc">Simple Analog Clock</h1>
+		<canvas id="analogClock" width="1000" height="800"></canvas>
+	</body>
 </html>
